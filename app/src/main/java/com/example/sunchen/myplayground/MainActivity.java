@@ -51,29 +51,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         imageView = (ImageView) findViewById(R.id.imageview);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
 
-        textView.setOnClickListener(this);
+        button.setOnClickListener(this);
+        radioButton.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case R.id.textView:
-                break;
-            case R.id.spinner:
-                break;
-            case R.id.checkBox:
-                break;
             case R.id.radioButton:
                 break;
-            case R.id.ratingbar:
-                break;
-            case R.id.password:
-                break;
             case R.id.button:
-                break;
-            case R.id.imageview:
-                break;
-            case R.id.progressBar:
                 break;
         }
     }
