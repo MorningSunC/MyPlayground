@@ -16,6 +16,7 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 /**
+ * I have 11 different components
  *  textview - I have modified text and textcolor
  *  spinner - I have modified entries
  *  radiobutton - I have modified text and textcolor
