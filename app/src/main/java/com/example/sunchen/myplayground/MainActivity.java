@@ -6,12 +6,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RatingBar;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
 /**
  *  textview - I have modified text and textcolor
@@ -23,8 +25,8 @@ import android.widget.TextView;
  *  button - I have modified text and textcolor
  *  imageview - I have modified src to a picture
  *  progressbar - I have modified progress and style
- *  Tablelayout - I have modified layout_width and layout height
- *  Relativelayout - I have modified layout_width and layout height
+ *  togglebutton - I have modified background and layout_toRightOf
+ *  imagebutton - I have modified background and layout_toRightOf
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private TextView textView;
@@ -36,6 +38,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button button;
     private ImageView imageView;
     private ProgressBar progressBar;
+    private ToggleButton toggleButton;
+    private ImageButton imagebutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,9 +54,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button = (Button) findViewById(R.id.button);
         imageView = (ImageView) findViewById(R.id.imageview);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
+        toggleButton = (ToggleButton) findViewById(R.id.togglebutton);
+        imagebutton = (ImageButton) findViewById(R.id.imagebutton);
 
         button.setOnClickListener(this);
         radioButton.setOnClickListener(this);
+        toggleButton.setOnClickListener(this);
+        imagebutton.setOnClickListener(this);
     }
 
     @Override
@@ -61,6 +69,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.radioButton:
                 break;
             case R.id.button:
+                break;
+            case R.id.togglebutton:
+                break;
+            case R.id.imagebutton:
                 break;
         }
     }
